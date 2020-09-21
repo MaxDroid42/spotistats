@@ -6,7 +6,7 @@ import 'package:spotistats/loading_page.dart';
 import 'package:spotistats/login_page.dart';
 import 'main_page.dart';
 
-const String clientID = "CLIENT_ID";
+const String clientID = "fb1ab1227af3462fa77e30b540d6c086";
 
 void saveToPrefs(String key, String content) async {
   SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -69,9 +69,9 @@ class _EntryPageState extends State<EntryPage> {
 
   @override
   Widget build(BuildContext context) {
-    return MainPage(
-      client_id: clientID,
-      auth_code: auth_code,
-    );
+      return MainPage(
+        client_id: clientID,
+        auth_code: auth_code,
+      );
   }
 }

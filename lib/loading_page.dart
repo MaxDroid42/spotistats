@@ -22,10 +22,7 @@ class LoadingContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Center(
-        child: Text(
-          "loading...",
-          style: TextStyle(color: Colors.white),
-        ),
+        child: Text("loading...", style: TextStyle(color: Colors.white),),
       ),
     );
   }

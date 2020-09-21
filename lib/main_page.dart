@@ -21,7 +21,7 @@ class _MainPageState extends State<MainPage> {
   List timeSpan = ["short_term", "medium_term", "long_term"];
 
   void switchTop() {
-    if (selectedList == "artists") {
+    if (selectedList == "artists"){
       setState(() {
         selectedList = "tracks";
       });
@@ -148,8 +148,7 @@ class _MainPageState extends State<MainPage> {
                                   topArtists[selectedTimeSpan]["items"][index]
                                       ["name"],
                                   style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18),
+                                      fontWeight: FontWeight.bold, fontSize: 18),
                                 ),
                               ),
                               Container(
@@ -195,10 +194,9 @@ class _MainPageState extends State<MainPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Container(
-                            width: 100,
-                            height: 100,
-                            child: Image.network(topSongs[selectedTimeSpan]
-                                ["items"][index]["album"]["images"][0]["url"])),
+                          width: 100,
+                          height: 100,
+                          child: Image.network(topSongs[selectedTimeSpan]["items"][index]["album"]["images"][0]["url"])),
                         Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Column(
@@ -210,14 +208,15 @@ class _MainPageState extends State<MainPage> {
                                   topSongs[selectedTimeSpan]["items"][index]
                                       ["name"],
                                   style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18),
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18
+                                  ),
                                 ),
                               ),
                               Container(
                                 width: MediaQuery.of(context).size.width * 0.5,
-                                child: Text(topSongs[selectedTimeSpan]["items"]
-                                    [index]["artists"][0]["name"]),
+                                child: Text(topSongs[selectedTimeSpan]["items"][index]
+                                    ["artists"][0]["name"]),
                               )
                             ],
                           ),
@@ -246,11 +245,7 @@ class _MainPageState extends State<MainPage> {
 
     return Scaffold(
         backgroundColor: Colors.black,
-        floatingActionButton: FloatingActionButton(
-          onPressed: switchTop,
-          backgroundColor: Colors.green,
-          child: Icon(getSwithIcon()),
-        ),
+        floatingActionButton: FloatingActionButton(onPressed: switchTop, backgroundColor: Colors.green, child: Icon(getSwithIcon()),),
         appBar: AppBar(
           title: Text("Spotistats"),
           actions: getIcon(selectedTimeSpan),

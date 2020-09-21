@@ -26,6 +26,7 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   String getAuthUrl() {
+    // crypto
     code = getRandomCode(128);
     var digest = sha256.convert(ascii.encode(code));
     String code_challenge = base64Url
