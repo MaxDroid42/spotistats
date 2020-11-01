@@ -6,7 +6,7 @@ import 'package:spotistats/loading_page.dart';
 import 'package:spotistats/login_page.dart';
 import 'main_page.dart';
 
-const String clientID = "fb1ab1227af3462fa77e30b540d6c086";
+const String clientID = "<CLIENT_ID>";
 
 void saveToPrefs(String key, String content) async {
   SharedPreferences prefs = await SharedPreferences.getInstance();
