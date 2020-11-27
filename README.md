@@ -1,3 +1,4 @@
+# This project has been permanently migrated to https://github.com/mfloto/spotistats!
 # spotistats
 A small and simple App to get top artists and tracks of your spotify account.
 
